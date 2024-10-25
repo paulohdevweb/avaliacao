@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baralho Mr.Deck</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url(background.jpg);
+            color: #eecc0b;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        header {
+            display: flex;
+            background: #316e33ea;
+            color: rgb(227, 187, 11);
+            padding: 1rem 0;
+            text-align: center;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #descricao, #contato {
+            background-color: rgba(0, 0, 0, 0.499);
+        }
+        section {
+            padding: 1rem;
+            margin: 1rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #211919;
+        }
+        #card {
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #card:hover {
+            transform: scale(1.5);
+            transition: transform 0.3s ease;
+        }
+        .logo {
+            display: flex;
+            border-radius: 45px;
+            max-width: 7%;
+            height: auto;
+        }
+        form {
+            border: 1px solid rgb(26, 115, 12);
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.52);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #eecc0b;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img class="logo" title="loja Mr.decks " src="logo.jpg" alt="Logotipo da empresa">
+    <h1>Baralho Mr.Deck</h1>
+</header>
+
+<section id="descricao">
+    <h2>Descrição do Baralho</h2>
+    <p>Descubra a experiência incomparável do nosso Baralho Premium Elite, projetado para entusiastas de jogos de cartas que valorizam a qualidade e a estética. Com uma combinação perfeita de design sofisticado e materiais de alta qualidade, este baralho foi desenvolvido para proporcionar uma jogabilidade excepcional e durabilidade prolongada.</p>
+    
+    <h3>Características Principais:</h3>
+    <ul>
+        <li><strong>Material de Construção:</strong> Feito de papel especial de alta gramatura e acabamento em plástico de alta qualidade.</li>
+        <li><strong>Design Artístico:</strong> Ilustrações exclusivas com acabamentos brilhantes e mate.</li>
+        <li><strong>Formato e Tamanho:</strong> Tamanho padrão de 63 x 88 mm, ideal para jogos tradicionais.</li>
+        <li><strong>Tecnologia de Impressão:</strong> Impressão de alta definição com cores vibrantes e detalhes nítidos.</li>
+        <li><strong>Durabilidade:</strong> Tratamento de laminação resistente à água e manchas.</li>
+        <li><strong>Conforto no Jogo:</strong> Superfície que facilita o embaralhamento e a distribuição das cartas.</li>
+        <li><strong>Apresentação e Armazenamento:</strong> Embalagem elegante, perfeita para apresentação ou armazenamento.</li>
+        <li><strong>Versatilidade:</strong> Adequado para uma variedade de jogos, desde pôquer até canastra.</li>
+        <li><strong>Garantia de Qualidade:</strong> Garantia de satisfação e suporte ao cliente.</li>
+        <li><strong>Ecológico:</strong> Produzido com processos sustentáveis e materiais recicláveis.</li>
+    </ul>
+    
+    <img id="card" src="baralho.jpg" title="O melhor baralho que você pode ter" alt="Imagem do Baralho Premium Elite">
+    
+    <h3>Especificações Técnicas</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Especificação</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dimensões</td>
+                <td>63 x 88 mm</td>
+            </tr>
+            <tr>
+                <td>Peso</td>
+                <td>300 g</td>
+            </tr>
+            <tr>
+                <td>Acabamento</td>
+                <td>Brilhante e mate</td>
+            </tr>
+            <tr>
+                <td>Material</td>
+                <td>Papel de alta gramatura com laminação</td>
+            </tr>
+            <tr>
+                <td>Resistência</td>
+                <td>Resistente à água e manchas</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="contato">
+    <h2>Formulário de Contato</h2>
+    <form action="enviar.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Aceito os termos</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</section>
+
+<footer>
+    <p>© 2024 Nome da Empresa. Todos os direitos reservados. | <a href="faq.html">FAQ</a></p>
+</footer>
+
+</body>
+</html>
